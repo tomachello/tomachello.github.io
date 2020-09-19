@@ -9,10 +9,10 @@ zgj 1
 aqd 1
 ifb 1
 qoj 1
-yfg
-uzb
-hrm
-yuq
+yfg 1
+uzb 1
+hrm 1
+yuq 1
 lyr
 fou
 bjy
