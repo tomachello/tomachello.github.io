@@ -5,9 +5,9 @@ ocj 1
 uhv 1
 see 1
 upl 1
-zgj
-aqd
-ifb
+zgj 1
+aqd 1
+ifb 1
 qoj
 yfg
 uzb
