@@ -10,7 +10,7 @@
 
 \newcommand{\st}{\textbf{ s.t. }}
 \newcommand{\SP}{\text{ }}
-\newcommand{\problem}[1]{\subsubsection*{problem \# #1}}
+\newcommand{\problem}[1]{\subsubsection*{\textbf{problem \##1}}}
 \newcommand{\chapter}[1]{\section*{#1}}
 
 \newcommand{\Zpf}{\mathbb{Z}_{\ge0}}
@@ -18,7 +18,9 @@
 \newcommand{\Rpf}{\mathbb{R}_{\ge0}}
 \newcommand{\Rpv}{\mathbb{R}_{>0}}
 
-\newcommand{\set}[1]{\textsc{#1}}
+\newcommand{\SET}[1]{\textsc{#1}}
+\newcommand{\FNC}[1]{\texttt{#1}}
+\newcommand{\VAR}[1]{\textit{#1}}
 
 \begin{document}
 \maketitle
@@ -32,6 +34,14 @@ list of guidelines:\\
 3. if a reader feels I did not follow one of the above guidelines they should let me know.
 
 \chapter{words}
-\problem{aaa} if two words commute, they must both be powers of a third word. 
-$$\{(w_1,w_2)\in \set{words}^2 \st w_1w_2=w_2w_1\}=\{(w^\alpha,w^\beta)\st w\in\set{words},\SP\alpha,\beta\in\Zpf\}$$
+\problem{bvo} if two words commute, they must both be powers of a third word. 
+$$\{(w_1,w_2)\in \SET{words}^2 \st w_1w_2=w_2w_1\}=\{(w^\alpha,w^\beta)\st w\in\SET{words},\SP\alpha,\beta\in\Zpf\}$$
+\problem{att} the set of all periods of a given word is closed under gcd.
+$$\alpha,\beta\in \SET{periods}(\VAR{word})\implies \FNC{gcd}(\alpha,\beta)\in\SET{periods}(\VAR{word})$$
+\problem{fll} suppose you found two equal consecutive sub words of some \VAR{word} of length $\FNC{minimal period}(\VAR{word})-1$. then they differ in placement by a period of \VAR{word}.
+\chapter{algorithms}
+\problem{ocj} longest common sub sequence of two words
+\problem{uhv} finding largest $j-i$ where $i<j$ and $a_i>a_j$ in a long sequence
+\chapter{more problems}
+\problem{see} alice tells bob $n$, as well as the elements of a sphere $S=S(x)$ in the hamming cube $Q_n$. how should bob find $x$?
 \end{document}
