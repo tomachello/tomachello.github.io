@@ -18,7 +18,7 @@
 \newcommand{\Rpf}{\mathbb{R}_{\ge0}}
 \newcommand{\Rpv}{\mathbb{R}_{>0}}
 
-\newcommand{\SET}[1]{\textsc{#1}}
+\newcommand{\CST}[1]{\textsc{#1}}
 \newcommand{\FNC}[1]{\texttt{#1}}
 \newcommand{\VAR}[1]{\textit{#1}}
 
@@ -32,16 +32,22 @@ list of guidelines:\\
 1. the reader has the job of discovering the math, while my job is to choose the exercises, guide the discussion, simplify and clarify the ideas and technique, and most importantly challenge the reader and make them love math.\\
 2. in presenting an argument I must focus on the key idea, taking all details for granted - mathematical exposition should not be confusing to follow.\\
 3. if a reader feels I did not follow one of the above guidelines they should let me know.
-
+\subsection*{notation and other matters you should never think about}
+variable quantities are denoted with \VAR{this text}, (example:\VAR{x,y,element,functional}). functions (of variable quantities) are denoted with \FNC{this text} (example:\FNC{gcd,power-set}) being a rigid map without a choice in the matter, given the variable has been set. constant quantities (or entities) are denoted by \CST{this text}, for they are fixed. example: $\CST{pi, fibonacci-word, quaternion-group}$. whenever there is a discussion on a certain object that can be any element of a set - i.e. a variable, but we fix them, we treat them as constants. for example, instead of writing\\ $\VAR{words}=\FNC{concatenation-span}(\VAR{alphabet})$, we have\\ $\CST{words}=\FNC{concatenation-span}(\CST{alphabet})$
 \chapter{words}
 \problem{bvo} if two words commute, they must both be powers of a third word. 
-$$\{(w_1,w_2)\in \SET{words}^2 \st w_1w_2=w_2w_1\}=\{(w^\alpha,w^\beta)\st w\in\SET{words},\SP\alpha,\beta\in\Zpf\}$$
-\problem{att} the set of all periods of a given word is closed under gcd.
-$$\alpha,\beta\in \SET{periods}(\VAR{word})\implies \FNC{gcd}(\alpha,\beta)\in\SET{periods}(\VAR{word})$$
+$$\{(w_1,w_2)\in \CST{words}^2 \st w_1w_2=w_2w_1\}=\{(w^\alpha,w^\beta)\st w\in\CST{words},\SP\alpha,\beta\in\Zpf\}$$
+\problem{att} the set of all periods of a given word is closed under gcd, generally speaking.
+$$\alpha,\beta\in \FNC{periods}(\VAR{word}), \SP\alpha+\beta-\FNC{gcd}(\alpha,\beta)\le \FNC{length}(\VAR{word})\implies \FNC{gcd}(\alpha,\beta)\in\FNC{periods}(\VAR{word})$$
 \problem{fll} suppose you found two equal consecutive sub words of some \VAR{word} of length $\FNC{minimal period}(\VAR{word})-1$. then they differ in placement by a period of \VAR{word}.
 \chapter{algorithms}
+\problem{upl} generate random permutation using random number generator
 \problem{ocj} longest common sub sequence of two words
 \problem{uhv} finding largest $j-i$ where $i<j$ and $a_i>a_j$ in a long sequence
-\chapter{more problems}
+\chapter{information}
 \problem{see} alice tells bob $n$, as well as the elements of a sphere $S=S(x)$ in the hamming cube $Q_n$. how should bob find $x$?
+\problem{zgj} thirteen objects are displayed to the audience. they choose two, and tell them to bob. then alice walks in the room. bob now tells alice that a certain bulb is not one of the two chosen ones. now alice gets four attempts at finding the two chosen ones out of the twelve. how is the trick done?
+\problem{aqd} on each of the 64 squares of a chessboard is a coin- some heads, some tails. the audience chooses a certain square on the board and tell bob. bob then flips one coin, after which alice comes in the room, looks only at the chessboard, and after some thought reveals the audiences square. how is the trick done?
+\chapter{probability}
+\problem{ifb} monty hall
 \end{document}
