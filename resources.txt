@@ -1,2 +1,6 @@
-applied combinatorics on words
-lecture videos by Walter Lewin
+books:
+  applied combinatorics on words
+videos:
+  Walter Lewin's physics lectures on youtube
+other:
+  Israeli math olympiad training materials
