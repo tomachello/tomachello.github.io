@@ -5,4 +5,6 @@ videos:
 other:
   math olympiads
   Israeli math olympiad training materials
+potential:
+  the design of c++, lecture by Bjarne Stroustrup
   
