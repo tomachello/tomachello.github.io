@@ -3,4 +3,6 @@ books:
 videos:
   Walter Lewin's physics lectures on youtube
 other:
+  math olympiads
   Israeli math olympiad training materials
+  
