@@ -1,5 +1,7 @@
 books:
   applied combinatorics on words
+websites:
+  canadian imo training - - - - https://sites.google.com/site/imocanada/
 videos:
   Walter Lewin's physics lectures on youtube
 other:
