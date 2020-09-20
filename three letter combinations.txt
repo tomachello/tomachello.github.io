@@ -13,8 +13,8 @@ yfg 1
 uzb 1
 hrm 1
 yuq 1
-lyr
-fou
+lyr 1
+fou 1
 bjy
 rfh
 euf
