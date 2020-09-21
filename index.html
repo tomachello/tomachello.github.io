@@ -21,7 +21,14 @@ welcome to the tomachello project webpage! <br><br>
 </div>
 
 <script>
-    var book = document.getElementById('book');
-    //if link is broken
+    var url = 'https://tomachello.github.io/tomachello.pdf';
+    function UrlExists(url) {
+    var http = new XMLHttpRequest();
+    http.open('HEAD', url, false);
+    http.send();
+    if (http.status != 404)
+        //  do something
+    else
         book.setAttribute('href', '/book backup.pdf');
+}
 </script>
