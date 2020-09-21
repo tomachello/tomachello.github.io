@@ -19,19 +19,3 @@ welcome to the tomachello project webpage! <br><br>
 <div id="bottom">
   <img src="https://hitwebcounter.com/counter/counter.php?page=7675870&style=0007&nbdigits=5&type=page&initCount=0">  
 </div>
-
-<script>
-    window.onload = (event) => {
-        var url = 'https://tomachello.github.io/tomachello.pdf';
-        function UrlExists(url) {
-        var http = new XMLHttpRequest();
-        http.open('HEAD', url, false);
-        http.send();
-        if (http.status != 404)
-            {console.log('good link');}
-        else
-            {book.setAttribute('href', '/book backup.pdf');
-            console.log('broken link');}
-        }
-};
-</script>
