@@ -16,8 +16,8 @@ yuq 1
 lyr 1
 fou 1
 bjy 1
-rfh
-euf
+rfh 1
+euf 1
 aqj
 kep
 psq
