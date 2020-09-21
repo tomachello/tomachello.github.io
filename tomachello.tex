@@ -13,6 +13,9 @@
 \newcommand{\problem}[1]{\subsubsection*{\textbf{problem \##1}}}
 \newcommand{\chapter}[1]{\section*{#1}}
 
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
 \newcommand{\Zpf}{\mathbb{Z}_{\ge0}}
 \newcommand{\Zpv}{\mathbb{Z}_{\ge1}}
 \newcommand{\Rpf}{\mathbb{R}_{\ge0}}
@@ -50,9 +53,22 @@ $$\alpha,\beta\in \FNC{periods}(\VAR{word}), \SP\alpha+\beta-\FNC{gcd}(\alpha,\b
 \problem{yfg} there's $n$ people in a row, and everyone has a hat with a number from $1$ to $k$ (start with $k=2$). everyone sees only those in front of them. from the end of the line, they need to guess their number, hearing the answers of the people before them. how can they maximize the number of correct answers?
 \problem{uzb} there's $n$ people in a circle, and everyone has a hat with a number from $1$ to $n$. (start with $n=2$) everyone sees everyone but themselves. they all simultaneously guess their color. how can they guarantee that at least one person gets it right?
 \problem{hrm} !!haven't solved yet!! there's $9^n$ coins, all weighing the same except for one which is lighter. you have three scales (you can put some coins on one side and some on the other and it'll tell you which side weighs more) but one scale is broken and can output randomly/adversely. how to find lighter coin in $3n+1$ steps?
-\problem{yuq} there's $n$ people, some good and some bad. you don't know which is which, only that there are more good than bad. you can ask any if any other is good or bad, and they'll tell you. if they are bad, they can lie. how can you find out which is which in, say, $2n-2$ questions?
+\problem{yuq} there's $n$ people, some good and some bad. you don't know which is which, only that there are more good than bad. you can ask any if any other is good or bad, and they'll tell you. if they are bad, they can lie. how can you find out which is which in, say, $2n-2$ questions?\\\\
+i wonder, if we know there's at least, say $80\%$ good people, what's the cost now, and how should we do it?
 \chapter{probability}
 \problem{ifb} monty hall
+\chapter{combinatorics and algebra}
+\problem{lyr} eads: at a certain mathematical conference, every pair of mathematicians are either friends or strangers.
+At mealtime, every participant eats in one of two large dining rooms. Each mathematician insists upon eating in a room which contains an even number of his or her friends. Prove that the number of ways that the mathematicians may be split between the two rooms is a power.
+\chapter{Euclidean geometry}
+\problem{fou} two circles intersect at $A$. two points, starting simultaneously from $A$, trace the circles, both in the same orientation and constant angular speed [they meet at $A$ again after each revolved once around its
+circle] prove the existence of a point $P$, such that the two points are always equidistant from $P$.
+\chapter{harmonic functions}
+\problem{bjy} a function $f:\Z^d\to[0,1]$ such that the average of $f$ around each point (on its $2d$ neighbors, two in each axial direction) equals the value of $f$ at that point (i.e. bounded harmonic function on lattice) must be constant.
+\chapter{number theory}
+\problem{rfh} determine $\displaystyle{\prod_{\alpha\in\F_p}(\alpha^2+1)}$\\\\
+(don't remember the exact details but i'd be surprised if one can't extend the argument to $\F_q$)
+\problem{euf} determine $\FNC{det}((\FNC{gcd}(i,j))_{1\le i,j\le n})$
 \end{document}
 
 
