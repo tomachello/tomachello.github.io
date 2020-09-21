@@ -26,9 +26,7 @@ welcome to the tomachello project webpage! <br><br>
     var http = new XMLHttpRequest();
     http.open('HEAD', url, false);
     http.send();
-    if (http.status != 404)
-        //  do something
-    else
-        book.setAttribute('href', '/book backup.pdf');
+    if (http.status == 404)
+        {book.setAttribute('href', '/book backup.pdf');}
 }
 </script>
