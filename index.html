@@ -21,15 +21,17 @@ welcome to the tomachello project webpage! <br><br>
 </div>
 
 <script>
-    var url = 'https://tomachello.github.io/tomachello.pdf';
-    function UrlExists(url) {
-    var http = new XMLHttpRequest();
-    http.open('HEAD', url, false);
-    http.send();
-    if (http.status != 404)
-    {console.log('good link');}
-    else
-        {book.setAttribute('href', '/book backup.pdf');
-        console.log('broken link');}
-}
+    window.onload = (event) => {
+        var url = 'https://tomachello.github.io/tomachello.pdf';
+        function UrlExists(url) {
+        var http = new XMLHttpRequest();
+        http.open('HEAD', url, false);
+        http.send();
+        if (http.status != 404)
+            {console.log('good link');}
+        else
+            {book.setAttribute('href', '/book backup.pdf');
+            console.log('broken link');}
+        }
+};
 </script>
