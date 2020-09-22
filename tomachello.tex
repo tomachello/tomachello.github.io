@@ -7,7 +7,6 @@
 
 \usepackage{amsmath, amssymb}
 
-
 \newcommand{\st}{\textbf{ s.t. }}
 \newcommand{\SP}{\text{ }}
 \newcommand{\problem}[1]{\subsubsection*{\textbf{problem \##1}}}
@@ -42,6 +41,9 @@ $$\{(w_1,w_2)\in \CST{words}^2 \st w_1w_2=w_2w_1\}=\{(w^\alpha,w^\beta)\st w\in\
 $$\alpha,\beta\in \FNC{periods}(\VAR{word}), \SP\alpha+\beta-\FNC{gcd}(\alpha,\beta)\le \FNC{length}(\VAR{word})\implies \FNC{gcd}(\alpha,\beta)\in\FNC{periods}(\VAR{word})$$
 \problem{fll} suppose you found two equal consecutive sub words of some \VAR{word} of length $\FNC{minimal period}(\VAR{word})-1$. then they differ in placement by a period of \VAR{word}.
 \chapter{algorithms}
+\problem{wcd} consider the following lock. you have an $n\times n$ table, in each square is a 
+(decimal, 0-9) digit. to open the lock you need all digits to be zero. now, for each row and for each column there is a button allowing you to increase each digit in said row/column by one. (so that 9 goes to 0). but that's it, you cannot operate on a single square (digit). now i mess up the lock (starting from an open state and pushing lots of buttons randomly). how can you open it in $9n$ steps?
+\problem{xbp} given a source of random bits - i.e. given $\FNC{random bit}=\FNC{random uniform}(\{1,2\})$, how can you get $\FNC{random uniform}(\{1,\dots,n\})$ in $\log_2(n)+O(1)$ average cost?
 \problem{upl} generate random permutation using random number generator
 \problem{ocj} longest common sub sequence of two words
 \problem{uhv} finding largest $j-i$ where $i<j$ and $a_i>a_j$ in a long sequence
@@ -55,23 +57,38 @@ $$\alpha,\beta\in \FNC{periods}(\VAR{word}), \SP\alpha+\beta-\FNC{gcd}(\alpha,\b
 \problem{hrm} !!haven't solved yet!! there's $9^n$ coins, all weighing the same except for one which is lighter. you have three scales (you can put some coins on one side and some on the other and it'll tell you which side weighs more) but one scale is broken and can output randomly/adversely. how to find lighter coin in $3n+1$ steps?
 \problem{yuq} there's $n$ people, some good and some bad. you don't know which is which, only that there are more good than bad. you can ask any if any other is good or bad, and they'll tell you. if they are bad, they can lie. how can you find out which is which in, say, $2n-2$ questions?\\\\
 i wonder, if we know there's at least, say $80\%$ good people, what's the cost now, and how should we do it?
+\chapter{invariants}
+\problem{oob} there is a circular bracelet with a red diamond, blue diamond, and a green diamond. (in this order, clockwise). now, you're allowed to take two consecutive diamonds with the same color, and put in between them a diamond of any color. you're also allowed to take two consecutive diamonds with a different color, and put in between them a diamond of one of those two colors. and you're allowed to perform those operations in reverse. if you see three consecutive diamonds not consisting of all three colors, you may delete the middle one. show you cannot get to red, green, blue clockwise.
 \chapter{probability}
 \problem{ifb} monty hall
-\chapter{combinatorics and algebra}
+\chapter{combinatorics}
 \problem{lyr} eads: at a certain mathematical conference, every pair of mathematicians are either friends or strangers.
 At mealtime, every participant eats in one of two large dining rooms. Each mathematician insists upon eating in a room which contains an even number of his or her friends. Prove that the number of ways that the mathematicians may be split between the two rooms is a power.
+\problem{aqj} !!haven't solved yet!! In the nation of Onewaynia, certain pairs of cities are connected by roads. Every road connects exactly two cities (roads are allowed to cross each other, e.g., via bridges). Some roads have a traffic capacity of 1 unit and other roads have a traffic capacity of 2 units. However, on every road, traffic is only allowed to travel in one direction. It is known that for every city, the sum of the capacities of the roads connected to it is always odd. The transportation minister needs to assign a direction to every road. Prove that he can do it in such a way that for every city, the difference between the sum of the capacities of roads entering the city and the sum of the capacities of roads leaving the city is always exactly one.
+\chapter{hypercube}
+\problem{isj} suppose $f:Q_n\to \{\pm1\}$ is almost a homomorphism, in the sense that $f(x+y)\neq f(x)f(y)$ in probability at most $\varepsilon$. then there is a homomorphism $g$ such that $f\neq g$ in probability at most $\varepsilon$.
+\chapter{analysis}
+\problem{psq} suppose $f:\Zpv^2\to\Zpv$ is such that every positive integer is an image of at most $N$ points, for some fixed $N$. then $\displaystyle{\sup_{n,m}} \dfrac{f(n,m)}{nm}=\infty$
+\chapter{processes}
+\problem{kep} there's $n$ rooms in a circular palace. in each room lies a dragon or a princess. $n$ knights came into the palace. on his arrival, each knight received a certain room (so that no two knights receive the same room - every room got one knight) and went to that room. if a knight sees a dragon, he slays it, and turns it into a princess, and then keeps going to the next room. if he sees a princess, he kisses her, making her into a dragon which kills him. now, there may be many knights around the palace, but there can never be two in the same room simultaneously. what happens eventually?
 \chapter{Euclidean geometry}
 \problem{fou} two circles intersect at $A$. two points, starting simultaneously from $A$, trace the circles, both in the same orientation and constant angular speed [they meet at $A$ again after each revolved once around its
 circle] prove the existence of a point $P$, such that the two points are always equidistant from $P$.
+\problem{xpo} two circles of equal radii are tangent to a larger circle from the inside
 \chapter{harmonic functions}
 \problem{bjy} a function $f:\Z^d\to[0,1]$ such that the average of $f$ around each point (on its $2d$ neighbors, two in each axial direction) equals the value of $f$ at that point (i.e. bounded harmonic function on lattice) must be constant.
+\chapter{graphs}
+\problem{cju} color the complete graph's edges red and blue. show that for one of those colors, the diameter of the graph is at most three. (given any two cities, you can reach one from the other using at most two other cities along the way)
 \chapter{number theory}
 \problem{rfh} determine $\displaystyle{\prod_{\alpha\in\F_p}(\alpha^2+1)}$\\\\
 (don't remember the exact details but i'd be surprised if one can't extend the argument to $\F_q$)
 \problem{euf} determine $\FNC{det}((\FNC{gcd}(i,j))_{1\le i,j\le n})$
+\problem{ujm} fix $n,m$. what's the minimal degree of a polynomial $f$ such that $f(t)=\FNC{fibonacci}(t)$ for all $t=m,m+1,\dots,m+n$
+\chapter{discrete geometry}
+\problem{rbu} Theseus starts at the plane origin. He can go one unit in each of the four directions. After a sequence
+of more than two such moves, starting with a step one unit to the south, he finds himself back at the origin. He never visited any point other than the origin more than once, and only visited the origin at the start and end of this sequence of moves. Let $X$ be the number of times that Theseus took a step one unit to the north, and then a step one unit to the west immediately afterward. Let $Y$ be the number of times that Theseus took a step one unit to the west, and then a step one unit to the north immediately afterward. Prove that $|X-Y| = 1$
+\problem{iwg} given a plane triangle whose vertices are lattice points (lattice is $\Z^2$) but whose perimeter contains no other lattice points. inside the triangle are four more lattice points. then these four points are collinear. 
 \end{document}
-
-
 
 \subsection*{notation and other matters you should never think about}
 variable quantities are denoted with \VAR{this text}, (example:\VAR{x,y,element,functional}). functions (of variable quantities) are denoted with \FNC{this text} (example:\FNC{gcd,power-set}) being a rigid map without a choice in the matter, given the variable has been set. constant quantities (or entities) are denoted by \CST{this text}, for they are fixed. example: $\CST{pi, fibonacci-word, quaternion-group}$. whenever there is a discussion on a certain object that can be any element of a set - i.e. a variable, but we fix them, we treat them as constants. for example, instead of writing\\ $\VAR{words}=\FNC{concatenation-span}(\VAR{alphabet})$, we have\\ $\CST{words}=\FNC{concatenation-span}(\CST{alphabet})$
