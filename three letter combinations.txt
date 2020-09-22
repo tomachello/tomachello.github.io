@@ -25,7 +25,7 @@ iwg 1
 xbp 1
 isj 1
 rbu 1
-wcd
+wcd 1
 oob
 ujm
 cju
