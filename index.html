@@ -4,8 +4,7 @@
 </head>
 
 <style>
-    html {font-family: Arial;
-            font-size: 200%;}
+    html {font-family: Arial;}
     
     a {color:blue; text-decoration:none;}
     
@@ -24,3 +23,15 @@
 <div id="bottom">
     <img src="https://hitwebcounter.com/counter/counter.php?page=7675870&style=0007&nbdigits=5&type=page&initCount=0">  
 </div>
+
+<script>
+var isMobile = /iPhone|Android/i.test(navigator.userAgent);
+if (isMobile) {
+  document.getElementById("main").style.fontSize = "250%";
+
+}
+else
+{
+      document.getElementById("main").style.fontSize = "150%";
+}
+</script>
