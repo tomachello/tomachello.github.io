@@ -11,3 +11,5 @@ other:
 potential:
   the design of c++, lecture by Bjarne Stroustrup
   IOI problems that every IMO-er should look at? - - - - https://artofproblemsolving.com/community/u29126h2031232p14335654
+  Poncelet's porism
+  https://taharut.org/imo/I5779/Wise.pdf
