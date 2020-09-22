@@ -20,8 +20,8 @@ rfh 1
 euf 1
 aqj 1
 kep 1
-psq
-iwg
+psq 1
+iwg 1
 xbp
 isj
 rbu
