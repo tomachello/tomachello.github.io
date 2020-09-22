@@ -1,9 +1,18 @@
+%https://www.overleaf.com/project/5f65e03fb51c4600017589e3
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
 \title{tomachello}
 \author{tomachello3@gmail.com}
 \date{}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
 
 \usepackage{amsmath, amssymb}
 
@@ -33,7 +42,9 @@ motivation: to write the book I needed growing up.\\
 list of guidelines:\\
 1. the reader has the job of discovering the math, while my job is to choose the exercises, guide the discussion, simplify and clarify the ideas and technique, and most importantly challenge the reader and make them love math.\\
 2. in presenting an argument I must focus on the key idea, taking all details for granted - mathematical exposition should not be confusing to follow.\\
-3. if a reader feels I did not follow one of the above guidelines they should let me know.
+3. if a reader feels I did not follow one of the above guidelines they should let me know.\\
+current state of project: collecting problems
+
 \chapter{words}
 \problem{bvo} if two words commute, they must both be powers of a third word. 
 $$\{(w_1,w_2)\in \CST{words}^2 \st w_1w_2=w_2w_1\}=\{(w^\alpha,w^\beta)\st w\in\CST{words},\SP\alpha,\beta\in\Zpf\}$$
@@ -43,7 +54,7 @@ $$\alpha,\beta\in \FNC{periods}(\VAR{word}), \SP\alpha+\beta-\FNC{gcd}(\alpha,\b
 \chapter{algorithms}
 \problem{wcd} consider the following lock. you have an $n\times n$ table, in each square is a 
 (decimal, 0-9) digit. to open the lock you need all digits to be zero. now, for each row and for each column there is a button allowing you to increase each digit in said row/column by one. (so that 9 goes to 0). but that's it, you cannot operate on a single square (digit). now i mess up the lock (starting from an open state and pushing lots of buttons randomly). how can you open it in $9n$ steps?
-\problem{xbp} given a source of random bits - i.e. given $\FNC{random bit}=\FNC{random uniform}(\{1,2\})$, how can you get $\FNC{random uniform}(\{1,\dots,n\})$ in $\log_2(n)+O(1)$ average cost?
+\problem{xbp} given a source of random bits - i.e. given $\FNC{random bit}=\FNC{random uniform}(\{1,2\})$, construct $\FNC{random uniform}(\{1,\dots,n\})$ using $\log_2(n)+O(1)$ average cost
 \problem{upl} generate random permutation using random number generator
 \problem{ocj} longest common sub sequence of two words
 \problem{uhv} finding largest $j-i$ where $i<j$ and $a_i>a_j$ in a long sequence
@@ -59,6 +70,10 @@ $$\alpha,\beta\in \FNC{periods}(\VAR{word}), \SP\alpha+\beta-\FNC{gcd}(\alpha,\b
 i wonder, if we know there's at least, say $80\%$ good people, what's the cost now, and how should we do it?
 \chapter{invariants}
 \problem{oob} there is a circular bracelet with a red diamond, blue diamond, and a green diamond. (in this order, clockwise). now, you're allowed to take two consecutive diamonds with the same color, and put in between them a diamond of any color. you're also allowed to take two consecutive diamonds with a different color, and put in between them a diamond of one of those two colors. and you're allowed to perform those operations in reverse. if you see three consecutive diamonds not consisting of all three colors, you may delete the middle one. show you cannot get to red, green, blue clockwise.
+\chapter{diophantine}
+\problem{zoj} $x^2+x=y^4+y^3+y^2+y+1$
+\chapter{inequalities}
+\problem{xbc} suppose $a_1,\dots,a_{2m+1}$ is positive geometric. then the average of the odd index elements is at least that of the even index elements.
 \chapter{probability}
 \problem{ifb} monty hall
 \chapter{combinatorics}
@@ -74,7 +89,7 @@ At mealtime, every participant eats in one of two large dining rooms. Each mathe
 \chapter{Euclidean geometry}
 \problem{fou} two circles intersect at $A$. two points, starting simultaneously from $A$, trace the circles, both in the same orientation and constant angular speed [they meet at $A$ again after each revolved once around its
 circle] prove the existence of a point $P$, such that the two points are always equidistant from $P$.
-\problem{xpo} two circles of equal radii are tangent to a larger circle from the inside
+\problem{xpo} two circles of equal radii are tangent to a larger circle from the inside, at points $A,B$. let $M$ be some point on the larger circle, and let $A',B'$ be the intersections of $MA,MB$ with the corresponding small circle. then $AB||A'B'$
 \chapter{harmonic functions}
 \problem{bjy} a function $f:\Z^d\to[0,1]$ such that the average of $f$ around each point (on its $2d$ neighbors, two in each axial direction) equals the value of $f$ at that point (i.e. bounded harmonic function on lattice) must be constant.
 \chapter{graphs}
@@ -87,7 +102,9 @@ circle] prove the existence of a point $P$, such that the two points are always 
 \chapter{discrete geometry}
 \problem{rbu} Theseus starts at the plane origin. He can go one unit in each of the four directions. After a sequence
 of more than two such moves, starting with a step one unit to the south, he finds himself back at the origin. He never visited any point other than the origin more than once, and only visited the origin at the start and end of this sequence of moves. Let $X$ be the number of times that Theseus took a step one unit to the north, and then a step one unit to the west immediately afterward. Let $Y$ be the number of times that Theseus took a step one unit to the west, and then a step one unit to the north immediately afterward. Prove that $|X-Y| = 1$
-\problem{iwg} given a plane triangle whose vertices are lattice points (lattice is $\Z^2$) but whose perimeter contains no other lattice points. inside the triangle are four more lattice points. then these four points are collinear. 
+\problem{iwg} given a plane triangle whose vertices are lattice points (lattice is $\Z^2$) but whose perimeter contains no other lattice points. inside the triangle are four more lattice points. then these four points are collinear.
+\chapter{infinite combinatorics}
+\problem{rut} any infinite real sequence has an infinite monotonic sub sequence.
 \end{document}
 
 \subsection*{notation and other matters you should never think about}
