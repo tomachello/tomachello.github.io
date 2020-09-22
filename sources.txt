@@ -1,5 +1,6 @@
-#rfh - - - classic?
-#euf - - - classic?
+#rfh - - - ? classic
+#euf - - - ? classic
+#rut - - - ? classic
 #aqj - - - Zuming Feng and Yufei Zhao
 #kep - - - Gillis math olympiad 2008
 #wcd - - - Gillis math olympiad 2010
