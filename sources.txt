@@ -2,3 +2,4 @@
 #euf - - - classic?
 #aqj - - - Zuming Feng and Yufei Zhao
 #kep - - - Gillis math olympiad 2008
+#rbu - - - HMMT Invitational Competition 2016
