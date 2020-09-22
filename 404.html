@@ -1,16 +1,27 @@
 <style> html{font-family: Arial} </style>
 404 error - nothing here <br>
 the page is probably being updated and will be up shortly :)<br>
-<p id="text"> redirecting you to the book in 6
-</p>
+
+redirecting you to the book in <b id="text"> 6 </b>
 <script>
   var x = document.getElementById("text");
-  for (i = 1; i < 6; i++) {
       setTimeout(function(){ 
-                            x.innerHTML="redirecting you to the book in"+String(6-i);
-                            }, i*1000);
-  setTimeout(function(){ 
+                            x.innerHTML="5";
+                            }, 1000);
+	    setTimeout(function(){ 
+                            x.innerHTML="4";
+                            }, 2000);
+	    setTimeout(function(){ 
+                            x.innerHTML="3";
+                            }, 3000);
+	    setTimeout(function(){ 
+                            x.innerHTML="2";
+                            }, 4000);
+	    setTimeout(function(){ 
+                            x.innerHTML="1";
+                            }, 5000);
+  
+       setTimeout(function(){ 
                         location.replace("https://tomachello.github.io/book%20backup.pdf");
                         }, 6000);
-  }
 </script>
