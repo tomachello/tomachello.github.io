@@ -1,31 +1,11 @@
-bvo 1
-att 1
-fll 1
-ocj 1
-uhv 1
-see 1
-upl 1
-zgj 1
-aqd 1
-ifb 1
-qoj 1
-yfg 1
-uzb 1
-hrm 1
-yuq 1
-lyr 1
-fou 1
-bjy 1
-rfh 1
-euf 1
-aqj 1
-kep 1
-psq 1
-iwg 1
-xbp 1
-isj 1
-rbu 1
-wcd 1
+used:
+
+bvo att fll ocj uhv see upl zgj aqd ifb 10
+qoj yfg uzb hrm yuq lyr fou bjy rfh euf 20
+aqj kep psq iwg xbp isj rbu wcd 
+
+not used:
+
 oob
 ujm
 cju
