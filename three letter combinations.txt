@@ -22,9 +22,9 @@ aqj 1
 kep 1
 psq 1
 iwg 1
-xbp
-isj
-rbu
+xbp 1
+isj 1
+rbu 1
 wcd
 oob
 ujm
