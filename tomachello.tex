@@ -1,4 +1,5 @@
 %https://www.overleaf.com/project/5f65e03fb51c4600017589e3
+
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 
@@ -66,6 +67,14 @@ $$\alpha,\beta\in \FNC{periods}(\VAR{word}), \SP\alpha+\beta-\FNC{gcd}(\alpha,\b
 \problem{yfg} there's $n$ people in a row, and everyone has a hat with a number from $1$ to $k$ (start with $k=2$). everyone sees only those in front of them. from the end of the line, they need to guess their number, hearing the answers of the people before them. how can they maximize the number of correct answers?
 \problem{uzb} there's $n$ people in a circle, and everyone has a hat with a number from $1$ to $n$. (start with $n=2$) everyone sees everyone but themselves. they all simultaneously guess their color. how can they guarantee that at least one person gets it right?
 \problem{hrm} !!haven't solved yet!! there's $9^n$ coins, all weighing the same except for one which is lighter. you have three scales (you can put some coins on one side and some on the other and it'll tell you which side weighs more) but one scale is broken and can output randomly/adversely. how to find lighter coin in $3n+1$ steps?
+\problem{tkg} !!haven't solved yet!! Alice has a map of Wonderland, a country consisting of n towns. For every
+pair of towns, there is a narrow road going from one town to the other. One day, all the roads
+are declared to be “one way” only. Alice has no information on the direction of the roads, but
+the King of Hearts has offered to help her. She is allowed to ask him a number of questions.
+For each question in turn, Alice chooses a pair of towns and the King of Hearts tells her the
+direction of the road connecting those two towns.
+Alice wants to know whether there is at least one town in Wonderland with at most one
+outgoing road. Prove that she can always find out by asking at most 4n questions.
 \problem{yuq} there's $n$ people, some good and some bad. you don't know which is which, only that there are more good than bad. you can ask any if any other is good or bad, and they'll tell you. if they are bad, they can lie. how can you find out which is which in, say, $2n-2$ questions?\\\\
 i wonder, if we know there's at least, say $80\%$ good people, what's the cost now, and how should we do it?
 \chapter{invariants}
@@ -77,8 +86,27 @@ i wonder, if we know there's at least, say $80\%$ good people, what's the cost n
 \chapter{probability}
 \problem{ifb} monty hall
 \chapter{combinatorics}
-\problem{lyr} eads: at a certain mathematical conference, every pair of mathematicians are either friends or strangers.
+\problem{lyr} at a certain mathematical conference, every pair of mathematicians are either friends or strangers.
 At mealtime, every participant eats in one of two large dining rooms. Each mathematician insists upon eating in a room which contains an even number of his or her friends. Prove that the number of ways that the mathematicians may be split between the two rooms is a power.
+\problem{aoz} !!haven't solved yet!! On a flat plane in Camelot, King Arthur builds a labyrinth L consisting of n walls,
+each of which is an infinite straight line. No two walls are parallel, and no three walls have a
+common point. Merlin then paints one side of each wall entirely red and the other side entirely
+blue.
+At the intersection of two walls there are four corners: two diagonally opposite corners
+where a red side and a blue side meet, one corner where two red sides meet, and one corner
+where two blue sides meet. At each such intersection, there is a two-way door connecting the
+two diagonally opposite corners at which sides of different colours meet.
+After Merlin paints the walls, Morgana then places some knights in the labyrinth. The
+knights can walk through doors, but cannot walk through walls.
+Let k(L) be the largest number k such that, no matter how Merlin paints the labyrinth L,
+Morgana can always place at least k knights such that no two of them can ever meet. For
+each n, what are all possible values for k(L), where L is a labyrinth with n walls?
+\problem{iso} Let $n$ be a positive integer. Harry has $n$ coins lined up on his desk, each showing
+heads or tails. He repeatedly does the following operation: if there are $k>0$ coins showing heads, then he flips the $k^\text{th}$ coin over; otherwise he stops the process. (For example, the
+process starting with THT would be THT, HHT, HTT, TTT, which takes three steps.)
+Letting $C$ denote the initial configuration (a sequence of $n$ H’s and T’s), write len(C) for the
+number of steps needed before all coins show T. Show that this number len(C) is finite, and
+determine its average value over all $2^n$ possible initial configurations C.
 \problem{aqj} !!haven't solved yet!! In the nation of Onewaynia, certain pairs of cities are connected by roads. Every road connects exactly two cities (roads are allowed to cross each other, e.g., via bridges). Some roads have a traffic capacity of 1 unit and other roads have a traffic capacity of 2 units. However, on every road, traffic is only allowed to travel in one direction. It is known that for every city, the sum of the capacities of the roads connected to it is always odd. The transportation minister needs to assign a direction to every road. Prove that he can do it in such a way that for every city, the difference between the sum of the capacities of roads entering the city and the sum of the capacities of roads leaving the city is always exactly one.
 \chapter{hypercube}
 \problem{isj} suppose $f:Q_n\to \{\pm1\}$ is almost a homomorphism, in the sense that $f(x+y)\neq f(x)f(y)$ in probability at most $\varepsilon$. then there is a homomorphism $g$ such that $f\neq g$ in probability at most $\varepsilon$.
@@ -105,6 +133,7 @@ of more than two such moves, starting with a step one unit to the south, he find
 \problem{iwg} given a plane triangle whose vertices are lattice points (lattice is $\Z^2$) but whose perimeter contains no other lattice points. inside the triangle are four more lattice points. then these four points are collinear.
 \chapter{infinite combinatorics}
 \problem{rut} any infinite real sequence has an infinite monotonic sub sequence.
+\problem{obr} Ramsey's theorem
 \end{document}
 
 \subsection*{notation and other matters you should never think about}
