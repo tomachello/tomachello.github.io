@@ -2,6 +2,8 @@ books:
   applied combinatorics on words
   olympiad combinatorics book - - - - https://artofproblemsolving.com/community/c6h601134
 websites:
+  lots of amazing notes - - - - http://alpha.math.uga.edu/~pete/expositions2012.html
+  lots of amazing notes - - - - https://dec41.user.srcf.net/notes/
   canadian imo training - - - - https://sites.google.com/site/imocanada/
 videos:
   Walter Lewin's physics lectures on youtube
