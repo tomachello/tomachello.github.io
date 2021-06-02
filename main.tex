@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb, xcolor, ulem, tikz-cd}
+\newcommand{\n}{\\ \\}
+\renewcommand{\sp}{\phantom{a}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\cost}{\text{cost}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\total}{\text{total}}
+\renewcommand{\lg}{\log_2}
+\newcommand{\blue}[1]{{\color{blue}{#1}}}
+\begin{document}
+send \sout{memes} comments to tomachello3@gmail.com\n
+\textbf{amortised cost}
+example. you're given an $n$ bit register, and the operation $inc:x\mapsto x+1$. it's reasonable to say $\cost(inc,x)=\#\{\text{lsb bits} =1\}$. so at worst $\cost=n$. on the other hand, $\E\cost=\sum k/2^k$ is small. but also note the following: if you had $\cost = k$ then it will take a exponential time for $\cost$ to equal $k$ again. \blue{one costly operation for a bunch of cheap ones.}
+\n\n
+\textbf{Tarjan's potential method}
+let  $\phi:S\mapsto\Z_{\ge0}$ assign structures a non-negative integer. if $a=t+\Delta\phi$ where $t$ is the time it takes to make the change $\Delta S$. then $\sum a + \phi(S_0)\ge t_{\total}$.\\
+above example contd. let $\phi=\total\sp \#1$'s in register. if $\cost=k$ then $t=k$ but $\Delta\phi=1-k$ (or $-k$ if $k=n$) so that $a=1$ and $t_\total\le\#\text{operations}+n$.
+\n\n
+\textbf{credit method}
+give each item some dollars. if an operation costs $t$, it has to be payed for by the items. if we can make this work, $t_\total\le$starting total money.
+\n\n
+\textbf{binomial heap}
+$B_0=\bullet$ and $B_{i+1}=(1+r)B_i=\begin{tikzcd}
+	& \bullet \\
+	& {B_i} &&& \bullet \\
+	\bullet && \bullet && {B_i} \\
+	&&& \bullet && \bullet
+	\arrow[no head, from=1-2, to=3-1]
+	\arrow[no head, from=1-2, to=3-3]
+	\arrow[no head, from=3-1, to=3-3]
+	\arrow[no head, from=1-2, to=2-5]
+	\arrow[no head, from=2-5, to=4-6]
+	\arrow[no head, from=2-5, to=4-4]
+	\arrow[no head, from=4-6, to=4-4]
+\end{tikzcd}$ in $B_n$ we have $2^n$ vertices and height $n$. the root has $n$ edges and there's ${n\choose k}$ nodes of depth $k$. say we have $N=\sum a_j2^j$ keys. we keep a $B_j$ if $a_j=1$. it costs $1$ to make two $B_i$'s into one $B_{i+1}$ so it costs $\lg N$ to meld two heaps of size at most $N$ or insert a new key. it costs $\lg N$ to find min, and also to delete it (how?).
+\clearpage
+algo2 notes https://www.cs.technion.ac.il/~hamilis/Algorithms2.pdf\\
+data structures 2 notes https://www.cs.technion.ac.il/~itai/Courses/ds2/lectures/lecture.html\\
+\end{document}
